@@ -2,11 +2,12 @@
 import discord
 import random
 import asyncio
+import os
 from discord.ext import commands
 
 
 ## CONSTANTS
-DISCORD_TOKEN = "NjI3NTU3ODUzNjUzMzY4ODMz.XY-Z4Q.Usfto9vUoWw3qvFxXzKh5Qsn9as"
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN') #create seperate .env file in same directory
 
 PLAYER_MIN = 3
 PLAYER_MAX = 12
